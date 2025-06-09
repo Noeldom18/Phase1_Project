@@ -64,10 +64,10 @@ After training for 10 epochs on COCO128, typical results are as follows (actual 
 
 | Metric        | Value (example) |
 |---------------|----------------|
-| mAP@0.5       | 0.62           |
-| mAP@0.5:0.95  | 0.45           |
-| Precision     | 0.71           |
-| Recall        | 0.68           |
+| mAP@0.5       | 0.691           |
+| mAP@0.5:0.95  | 0.5264           |
+| Precision     | 0.683           |
+| Recall        | 0.623           |
 
 - **IoU (Intersection over Union):** Reflected in mAP scores.
 - **Confusion Matrix:** Saved in the output directory.
@@ -78,10 +78,10 @@ After training for 10 epochs on COCO128, typical results are as follows (actual 
 
 ## Optimization Techniques
 
-- Used pretrained weights (transfer learning).
-- Data augmentation is handled automatically by the training library.
-- Early stopping and learning rate scheduling are built-in during training.
-
+  - Used the lightweight YOLOv8n for speed.
+  - Trained for fewer epochs (10) for quick turnaround.
+  - Applied confidence threshold of 0.25 for detection.
+  - Exported ONNX model for future deployment.
 ---
 
 ## Results
@@ -92,15 +92,13 @@ Detection outputs and evaluation metrics are saved in the `runs/` directory for 
 
 ## Team & Hackathon Details
 
-- **Hackathon:** [Your Hackathon Name Here]
-- **Team Members:** [Your Names Here]
-- **Submission Date:** [YYYY-MM-DD]
+- **Hackathon:** [Object Detection with YOLOv8 on COCO128 Dataset]
+- **Member:** [Noel Dominic]
+- **Submission Date:** [09-06-2025]
 
 ---
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
